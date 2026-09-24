@@ -7,7 +7,7 @@ int n;
 vector<vector<double>> A; //co-efficient matrix
 vector<double> b; //constant matrix
 vector<vector<double>> L, U; //lower and upper triangular matrix
-vector<double> y, x; //y for forward substitution, x for abckward sunstitution
+vector<double> y, x; //y for forward substitution, x for backward sunstitution
 
 void printMatrix(vector<vector<double>> &M);
 
