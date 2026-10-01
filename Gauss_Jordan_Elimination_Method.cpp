@@ -63,7 +63,7 @@ vector<double> gaussJordan(vector<vector<double>> &augmat)
         {
             double val =augmat[i][j];
 
-            if(abs(val) < 1e-9)
+            if(fabs(val) < 1e-9)
             {
                 val = 0.0;
             }
