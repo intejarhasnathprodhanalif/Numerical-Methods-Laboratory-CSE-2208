@@ -8,6 +8,8 @@ vector<double> Polynomial(vector<double> &x, vector<double> &y, int m)
 
     vector<vector<double>> M(m+1, vector<double>(m+2, 0));
 
+    //augmented matrix
+
     for(int i=0; i<=m; i++)
     {
         for(int j=0; j<=m; j++)
@@ -23,6 +25,8 @@ vector<double> Polynomial(vector<double> &x, vector<double> &y, int m)
             M[i][m+1] += pow(x[k], i)*y[k];
         }
     }
+
+    //Gauss Jordan Elimination
 
     for(int i=0; i<=m; i++)
     {
@@ -46,6 +50,8 @@ vector<double> Polynomial(vector<double> &x, vector<double> &y, int m)
             }
         }
     }
+
+    //answer
 
     vector<double> a(m+1);
     for(int i=0; i<=m; i++)
